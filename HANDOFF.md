@@ -41,7 +41,7 @@ e:/Server/homebrew-ebook/
 - **Chapter 1** (`chapter-01.html`):
   - 1.1 Етимология (`#etymology`)
   - 1.2 Първичен вариант (`#origins`)
-  - 1.3 Хронология (`#chronology`) + Bulgarian Vintage Diagram (`images/chronology-diagram.png`)
+  - 1.3 Хронология (`#chronology`) + Bulgarian Vintage Diagram (`images/chronology-diagram.png`) with wide breakout styling and Pure CSS Lightbox 100% Zoom modal (`#chronology-zoom`)
   - 1.4 Любопитни факти (`#facts`)
 
 ### ⏳ Upcoming Chapters (To be created in next sessions)
