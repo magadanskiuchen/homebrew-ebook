@@ -1,0 +1,124 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 580" width="100%" height="100%">
+  <defs>
+    <style>
+      .bg { fill: #fbf8f3; }
+      .border { stroke: #2c2825; stroke-width: 3; fill: none; }
+      .inner-border { stroke: #b86b14; stroke-width: 1; fill: none; }
+      .header-title { font-family: 'Georgia', 'Times New Roman', serif; font-size: 23px; font-weight: bold; fill: #1a1614; text-anchor: middle; }
+      .header-sub { font-family: 'Georgia', 'Times New Roman', serif; font-size: 13.5px; font-style: italic; fill: #b86b14; text-anchor: middle; }
+      .card-bg { fill: #f2ebd9; stroke: #d8cbb5; stroke-width: 1.5; rx: 8px; }
+      .badge-bg { fill: #b86b14; rx: 4px; }
+      .badge-text { font-family: -apple-system, sans-serif; font-size: 12px; font-weight: bold; fill: #ffffff; text-anchor: middle; }
+      .card-title { font-family: 'Georgia', serif; font-size: 16px; font-weight: bold; fill: #1a1614; text-anchor: middle; }
+      .card-subtitle { font-family: -apple-system, sans-serif; font-size: 13px; font-weight: bold; fill: #b86b14; text-anchor: middle; }
+      .card-desc { font-family: -apple-system, sans-serif; font-size: 12.5px; fill: #3a3532; line-height: 1.5; }
+      .card-desc-bold { font-family: -apple-system, sans-serif; font-size: 12.5px; font-weight: bold; fill: #1a1614; }
+      .spectrum-line { stroke: #b86b14; stroke-width: 3; stroke-dasharray: none; }
+      .spectrum-arrow { fill: #b86b14; }
+      .icon-text { font-size: 32px; text-anchor: middle; }
+    </style>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="1000" height="580" class="bg" />
+  
+  <!-- Decorative Frame -->
+  <rect x="15" y="15" width="970" height="550" class="border" opacity="0.9" />
+  <rect x="22" y="22" width="956" height="536" class="inner-border" />
+
+  <!-- Header Banner -->
+  <text x="500" y="55" class="header-title">СЪОТНОШЕНИЕ SO₄²⁻ : Cl⁻ СПОРЕД СТИЛА БИРА</text>
+  <text x="500" y="78" class="header-sub">ВЛИЯНИЕ НА СУЛФАТНО-ХЛОРИДНИЯ БАЛАНС ВЪРХУ ВКУСА И ТЯЛОТО НА БИРАТА</text>
+  <line x1="180" y1="92" x2="820" y2="92" stroke="#b86b14" stroke-width="1.5" />
+
+  <!-- Central Spectrum Scale Axis -->
+  <g transform="translate(0, 115)">
+    <!-- Main Spectrum Bar -->
+    <line x1="60" y1="20" x2="940" y2="20" class="spectrum-line" />
+    <polygon points="50,20 65,13 65,27" class="spectrum-arrow" />
+    <polygon points="950,20 935,13 935,27" class="spectrum-arrow" />
+
+    <!-- Ticks & Markers -->
+    <circle cx="180" cy="20" r="7" fill="#b86b14" />
+    <circle cx="500" cy="20" r="7" fill="#b86b14" />
+    <circle cx="820" cy="20" r="7" fill="#b86b14" />
+  </g>
+
+  <!-- 3 Main Columns / Cards -->
+
+  <!-- Column 1: Sulfate Dominant -->
+  <g transform="translate(40, 160)">
+    <rect width="280" height="360" class="card-bg" rx="8" />
+    <rect x="15" y="15" width="250" height="26" class="badge-bg" rx="4" />
+    <text x="140" y="32" class="badge-text">SO₄²⁻ : Cl⁻ > 2:1 до 4:1</text>
+
+    <text x="140" y="75" class="icon-text">🌿🍺</text>
+    <text x="140" y="115" class="card-title">Сулфатно преобладаване</text>
+    <text x="140" y="135" class="card-subtitle">„Хмелов акцент &amp; Сух завършек“</text>
+    
+    <line x1="25" y1="150" x2="255" y2="150" stroke="#d8cbb5" stroke-width="1" />
+
+    <text x="20" y="175" class="card-desc-bold">Вкусов ефект:</text>
+    <text x="20" y="198" class="card-desc">• Изостря хмеловата горчивина</text>
+    <text x="20" y="218" class="card-desc">• Придава сух, чист и свеж завършек</text>
+    <text x="20" y="238" class="card-desc">• Подчертава етеричните аромати</text>
+
+    <line x1="25" y1="255" x2="255" y2="255" stroke="#d8cbb5" stroke-width="1" />
+
+    <text x="20" y="280" class="card-desc-bold">Типични стилове бира:</text>
+    <text x="20" y="303" class="card-desc">• Pilsner (Чешки / Немски)</text>
+    <text x="20" y="323" class="card-desc">• West Coast IPA &amp; Pale Ale</text>
+    <text x="20" y="343" class="card-desc">• Burton-on-Trent Amber Ales</text>
+  </g>
+
+  <!-- Column 2: Balanced Ratio -->
+  <g transform="translate(360, 160)">
+    <rect width="280" height="360" class="card-bg" rx="8" />
+    <rect x="15" y="15" width="250" height="26" class="badge-bg" rx="4" />
+    <text x="140" y="32" class="badge-text">SO₄²⁻ : Cl⁻ ≈ 1:1</text>
+
+    <text x="140" y="75" class="icon-text">⚖️🍺</text>
+    <text x="140" y="115" class="card-title">Балансирано съотношение</text>
+    <text x="140" y="135" class="card-subtitle">„Хармонично тяло &amp; Баланс“</text>
+
+    <line x1="25" y1="150" x2="255" y2="150" stroke="#d8cbb5" stroke-width="1" />
+
+    <text x="20" y="175" class="card-desc-bold">Вкусов ефект:</text>
+    <text x="20" y="198" class="card-desc">• Равновесие между малц и хмел</text>
+    <text x="20" y="218" class="card-desc">• Загладена, мека горчивина</text>
+    <text x="20" y="238" class="card-desc">• Умерено и пивко тяло</text>
+
+    <line x1="25" y1="255" x2="255" y2="255" stroke="#d8cbb5" stroke-width="1" />
+
+    <text x="20" y="280" class="card-desc-bold">Типични стилове бира:</text>
+    <text x="20" y="303" class="card-desc">• Helles Lager &amp; Märzen</text>
+    <text x="20" y="323" class="card-desc">• Vienna Lager &amp; Amber Ale</text>
+    <text x="20" y="343" class="card-desc">• Hefeweizen (Пшенична бира)</text>
+  </g>
+
+  <!-- Column 3: Chloride Dominant -->
+  <g transform="translate(680, 160)">
+    <rect width="280" height="360" class="card-bg" rx="8" />
+    <rect x="15" y="15" width="250" height="26" class="badge-bg" rx="4" />
+    <text x="140" y="32" class="badge-text">Cl⁻ : SO₄²⁻ > 2:1 до 3:1</text>
+
+    <text x="140" y="75" class="icon-text">🌾🍺</text>
+    <text x="140" y="115" class="card-title">Хлоридно преобладаване</text>
+    <text x="140" y="135" class="card-subtitle">„Малцова сладост &amp; Плътност“</text>
+
+    <line x1="25" y1="150" x2="255" y2="150" stroke="#d8cbb5" stroke-width="1" />
+
+    <text x="20" y="175" class="card-desc-bold">Вкусов ефект:</text>
+    <text x="20" y="198" class="card-desc">• Подчертава малцовия профил</text>
+    <text x="20" y="218" class="card-desc">• Придава сочно, кадифено тяло</text>
+    <text x="20" y="238" class="card-desc">• Омекотява хмеловата горчивина</text>
+
+    <line x1="25" y1="255" x2="255" y2="255" stroke="#d8cbb5" stroke-width="1" />
+
+    <text x="20" y="280" class="card-desc-bold">Типични стилове бира:</text>
+    <text x="20" y="303" class="card-desc">• Stout &amp; Porter (Дъблин)</text>
+    <text x="20" y="323" class="card-desc">• NEIPA (New England IPA)</text>
+    <text x="20" y="343" class="card-desc">• Bock &amp; Dunkel (Тъмни лагери)</text>
+  </g>
+
+</svg>

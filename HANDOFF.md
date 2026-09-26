@@ -1,8 +1,11 @@
 # Ebook Project State & Handoff Document
 
 > **Book Title**: Изкуството на домашното пивоварство (Практическо ръководство за начинаещи и напреднали)  
+> **Source Documents**:
+> - `docs/book-source.pdf` (Част 1: Страници 1–25)
+> - `docs/book-source-2.pdf` (Част 2: Страници 26–51)
 > **Format**: Clean Multi-page HTML/CSS Ebook (Zero JS)  
-> **Status**: Chapter 1 Complete & Verified
+> **Status**: Chapters 1 & 2 Complete & Verified
 
 ---
 
@@ -12,6 +15,9 @@
 e:/Server/homebrew-ebook/
 ├── .gemini/
 │   └── rules.md                  # Project rules & guidelines for AI agents
+├── docs/
+│   ├── book-source.pdf           # Original PDF Part 1 (Pages 1–25, Chapters 1–5)
+│   └── book-source-2.pdf         # Original PDF Part 2 (Pages 26–51, Chapters 5–10+)
 ├── index.html                    # Main landing page & Table of Contents
 ├── chapter-01.html               # Chapter 1 (Complete, ~800 words)
 ├── css/
@@ -26,11 +32,14 @@ e:/Server/homebrew-ebook/
 
 ## 📌 Project Standards Overview
 
-1. **Zero JavaScript**: Pure semantic HTML5 + CSS.
-2. **Language**: Bulgarian. English is allowed ONLY in parentheses for hop/malt/yeast names or specific jargon (e.g. *Saccharomyces pastorianus*).
-3. **Themes**: Warm paper light theme (`#faf7f2`) + automatic System Dark Mode (`prefers-color-scheme: dark`).
-4. **Granularity**: 500 – 1000 words per `.html` file.
-5. **Nav & Anchors**: Every chapter page has top/bottom nav buttons and section `#id` anchors.
+1. **Source Content**:
+   - `docs/book-source.pdf`: Contains Chapters 1 through 5 (History, Ingredients, Cleaning, Fermentation transfer, Yeast basics).
+   - `docs/book-source-2.pdf`: Contains Chapters 5+ through end (Yeast dynamics, Bottling, Recipes, Troubleshooting).
+2. **Zero JavaScript**: Pure semantic HTML5 + CSS.
+3. **Language**: Bulgarian. English is allowed ONLY in parentheses for hop/malt/yeast names or specific jargon (e.g. *Saccharomyces pastorianus*).
+4. **Themes**: Warm paper light theme (`#faf7f2`) + automatic System Dark Mode (`prefers-color-scheme: dark`).
+5. **Granularity**: 500 – 1000 words per `.html` file.
+6. **Nav & Anchors**: Every chapter page has top/bottom nav buttons and section `#id` anchors.
 
 ---
 
@@ -41,26 +50,23 @@ e:/Server/homebrew-ebook/
 - **Chapter 1** (`chapter-01.html`):
   - 1.1 Етимология (`#etymology`)
   - 1.2 Първичен вариант (`#origins`)
-  - 1.3 Хронология (`#chronology`) + Bulgarian Vintage Diagram (`images/chronology-diagram.png`) with wide breakout styling and Pure CSS Lightbox 100% Zoom modal (`#chronology-zoom`)
+  - 1.3 Хронология (`#chronology`) + Bulgarian Vintage Diagram (`images/chronology-diagram.png`)
   - 1.4 Любопитни факти (`#facts`)
+- **Chapter 2** (`chapter-02-1-water.html`, `chapter-02-2-malt.html`, `chapter-02-3-hops.html`):
+  - 2.1 Водата – Първата съставка и профилирането (Минерали, български води, бутилирани води, pH) + Vintage Diagram (`images/water-profiles-diagram.jpg`)
+  - 2.2 Малцът – Душата на бирата, видове и контрол на плътността (Смилане, базови/карамелени/тъмни малцове, OG & ABV за 10L)
+  - 2.3 Хмелът – Подправката, душеприказчикът и консервантът (Изомеризация, варене, Dry Hopping, IBU дозировки)
 
 ### ⏳ Upcoming Chapters (To be created in next sessions)
 
-#### Chapter 2: Основата на бирата: Съставките и техните роли
-- *Note*: PDF pages 4–18. This is long and contains heavy tables and chemical formulas ($pH$, $Ca^{2+}$, $SO_4^{2-}$, IBU tables).
-- *Planned Split*:
-  - `chapter-02-1-water.html` (~800 words): Water profiling, mineral impact ($Ca^{2+}$, $SO_4^{2-}$, $Cl^-$, $HCO_3^-$), Bulgarian tap water analysis (София, Пловдив, Шумен), bottled water table.
-  - `chapter-02-2-malt.html` (~900 words): Malting process, milling, base/caramel/roasted malt categories, OG & ABV control table.
-  - `chapter-02-3-hops.html` (~900 words): Hop roles, alpha acids, boil timing (Bittering, Flavor, Flameout, Dry Hop), IBU dosage table.
-
 #### Chapter 3: Чистотата е здраве (и бира): Почистване и дезинфекция
-- *Note*: PDF pages 18–21.
+- *Source*: `docs/book-source.pdf` (Pages 18–21).
 - *Planned File*: `chapter-03.html` (~850 words) - Cleaning vs. Sanitizing, Star San, Oxi, Alcohol, Sanitization checklist.
 
 #### Chapter 4: Преходът към ферментатора: Охлаждане, аерация и засяване
-- *Note*: PDF pages 21–25.
+- *Source*: `docs/book-source.pdf` (Pages 21–25).
 - *Planned File*: `chapter-04.html` (~800 words) - Cooling methods, Whirlpool, aeration, yeast pitching & rehydration.
 
-#### Chapter 5: Магията на дрождите: Микробиология и ферментация
-- *Note*: PDF page 25+.
-- *Planned File*: `chapter-05.html` (~800 words) - Fermentation products, esters, temperature control.
+#### Chapter 5+: Магията на дрождите & Следващи Глави
+- *Source*: `docs/book-source.pdf` (Page 25+) & `docs/book-source-2.pdf` (Pages 26–51).
+- *Planned Files*: `chapter-05.html` and onward as outlined in `book-source-2.pdf`.
