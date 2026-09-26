@@ -79,30 +79,10 @@
         <h2>Водни профили според стила бира</h2>
         <p>Исторически, световните стилове бира са възникнали именно според естествения профил на местната вода:</p>
 
-        <!-- Checkbox for Pure CSS Lightbox Toggle (Zero Scroll Jump) -->
-        <input type="checkbox" id="water-zoom-toggle" class="lightbox-checkbox">
-
-        <!-- Wide Image Figure with Lightbox Zoom Trigger -->
         <figure class="wide-figure">
-          <label for="water-zoom-toggle" class="zoom-trigger" title="Щракнете за преглед в пълен размер (100%)">
-            <img src="images/water-profiles-diagram.jpg" alt="Съотношение SO₄²⁻ : Cl⁻ според стила бира" width="1000" height="562">
-          </label>
-          <figcaption>Графика: Съотношение на сулфати към хлориди (SO<sub>4</sub><sup>2-</sup> : Cl<sup>-</sup>) според стила бира (щракнете за пълен размер)</figcaption>
+          <img src="images/water-profiles-diagram.jpg" alt="Съотношение SO₄²⁻ : Cl⁻ според стила бира" width="1000" height="562">
+          <figcaption>Графика: Съотношение на сулфати към хлориди (SO<sub>4</sub><sup>2-</sup> : Cl<sup>-</sup>) според стила бира</figcaption>
         </figure>
-
-        <!-- Lightbox Zoom Modal (Pure CSS Checkbox Toggle) -->
-        <div class="lightbox-modal">
-          <label for="water-zoom-toggle" class="lightbox-overlay" aria-label="Затвори"></label>
-          <div class="lightbox-dialog">
-            <label for="water-zoom-toggle" class="lightbox-close" title="Затвори">&times;</label>
-            <div class="lightbox-img-wrapper">
-              <img src="images/water-profiles-diagram.jpg" alt="Съотношение SO₄²⁻ : Cl⁻ според стила бира (пълен 100% размер)" width="1000" height="562">
-            </div>
-            <div class="lightbox-caption">
-              Графика: Съотношение SO<sub>4</sub><sup>2-</sup> : Cl<sup>-</sup> според стила бира &bull; 100% размер
-            </div>
-          </div>
-        </div>
 
         <h3>За Лагерни стилове:</h3>
         <ul>
@@ -224,16 +204,5 @@
   <footer class="book-footer">
     <p>Изкуството на домашното пивоварство &copy; Ebook издание</p>
   </footer>
-
-  <script>
-    // Close zoom lightbox modal when pressing Escape key
-    document.addEventListener('keydown', function(e) {
-      if (e.key === 'Escape') {
-        document.querySelectorAll('.lightbox-checkbox').forEach(function(cb) {
-          cb.checked = false;
-        });
-      }
-    });
-  </script>
 </body>
 </html>

@@ -87,30 +87,10 @@
           <li><strong>Железопътният транспорт и стъклените бутилки:</strong> Позволяват на големите заводи да транспортират бира на стотици километри, измествайки малките местни пивоварни и поставяйки началото на глобалните бирени гиганти.</li>
         </ol>
 
-        <!-- Checkbox for Pure CSS Lightbox Toggle (Zero Scroll Jump) -->
-        <input type="checkbox" id="chronology-zoom-toggle" class="lightbox-checkbox">
-
-        <!-- Wide Image Figure with Lightbox Zoom Trigger -->
         <figure class="wide-figure">
-          <label for="chronology-zoom-toggle" class="zoom-trigger" title="Щракнете за преглед в пълен размер (100%)">
-            <img src="images/chronology-diagram.png" alt="Хронология на бирата: Кратка история на една напитка" width="1000" height="562">
-          </label>
-          <figcaption>Хронология на бирата: Кратка история на една напитка през вековете (щракнете върху изображението за пълен размер)</figcaption>
+          <img src="images/chronology-diagram.png" alt="Хронология на бирата: Кратка история на една напитка" width="1000" height="562">
+          <figcaption>Хронология на бирата: Кратка история на една напитка през вековете</figcaption>
         </figure>
-
-        <!-- Lightbox Zoom Modal (Pure CSS Checkbox Toggle) -->
-        <div class="lightbox-modal">
-          <label for="chronology-zoom-toggle" class="lightbox-overlay" aria-label="Затвори"></label>
-          <div class="lightbox-dialog">
-            <label for="chronology-zoom-toggle" class="lightbox-close" title="Затвори">&times;</label>
-            <div class="lightbox-img-wrapper">
-              <img src="images/chronology-diagram.png" alt="Хронология на бирата (пълен 100% размер)" width="1000" height="562">
-            </div>
-            <div class="lightbox-caption">
-              Хронология на бирата: Кратка история на една напитка през вековете &bull; 100% размер
-            </div>
-          </div>
-        </div>
       </section>
 
       <!-- Section 1.4 -->
@@ -149,16 +129,5 @@
   <footer class="book-footer">
     <p>Изкуството на домашното пивоварство &copy; Ebook издание</p>
   </footer>
-
-  <script>
-    // Close zoom lightbox modal when pressing Escape key
-    document.addEventListener('keydown', function(e) {
-      if (e.key === 'Escape') {
-        document.querySelectorAll('.lightbox-checkbox').forEach(function(cb) {
-          cb.checked = false;
-        });
-      }
-    });
-  </script>
 </body>
 </html>
