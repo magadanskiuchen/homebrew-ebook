@@ -401,39 +401,107 @@ figcaption {
   font-size: 0.95rem;
 }
 
-/* Tables */
+/* Custom Styled Tables & Responsive Wrappers */
+.table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  margin: 2rem 0;
+  border-radius: 10px;
+  border: 1px solid var(--border-color);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+}
+
 table {
   width: 100%;
   border-collapse: collapse;
-  margin: 1.8rem 0;
   font-size: 0.95rem;
   background-color: var(--bg-color);
-  border-radius: 6px;
-  overflow: hidden;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+  margin: 0;
 }
 
 th, td {
-  padding: 0.75rem 0.9rem;
-  border: 1px solid var(--border-color);
+  padding: 0.9rem 1.1rem;
+  border-bottom: 1px solid var(--border-color);
+  border-right: 1px solid var(--border-color);
   text-align: left;
-  vertical-align: top;
+  vertical-align: middle;
+}
+
+th:last-child, td:last-child {
+  border-right: none;
+}
+
+tr:last-child td {
+  border-bottom: none;
 }
 
 th {
   background-color: var(--card-bg);
   color: var(--heading-color);
   font-family: var(--font-heading);
-  font-weight: bold;
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+  border-bottom: 2px solid var(--accent-color);
 }
 
 tr:nth-child(even) td {
-  background-color: rgba(0, 0, 0, 0.02);
+  background-color: rgba(0, 0, 0, 0.015);
+}
+
+tr:hover td {
+  background-color: rgba(184, 107, 20, 0.06);
+  transition: background-color 0.15s ease;
 }
 
 @media (prefers-color-scheme: dark) {
   tr:nth-child(even) td {
-    background-color: rgba(255, 255, 255, 0.025);
+    background-color: rgba(255, 255, 255, 0.02);
+  }
+  tr:hover td {
+    background-color: rgba(229, 152, 59, 0.12);
+  }
+}
+
+/* Badges & Tags for Table Data */
+.tag {
+  display: inline-block;
+  padding: 0.25rem 0.65rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  border-radius: 4px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.tag-soft {
+  background-color: rgba(184, 107, 20, 0.12);
+  color: var(--accent-color);
+  border: 1px solid rgba(184, 107, 20, 0.25);
+}
+
+.tag-blue {
+  background-color: rgba(43, 114, 186, 0.12);
+  color: #2b72ba;
+  border: 1px solid rgba(43, 114, 186, 0.25);
+}
+
+.tag-green {
+  background-color: rgba(46, 125, 50, 0.12);
+  color: #2e7d32;
+  border: 1px solid rgba(46, 125, 50, 0.25);
+}
+
+@media (prefers-color-scheme: dark) {
+  .tag-blue {
+    background-color: rgba(100, 181, 246, 0.15);
+    color: #64b5f6;
+    border-color: rgba(100, 181, 246, 0.3);
+  }
+  .tag-green {
+    background-color: rgba(129, 199, 132, 0.15);
+    color: #81c784;
+    border-color: rgba(129, 199, 132, 0.3);
   }
 }
 
