@@ -12,6 +12,12 @@
 - **Single CSS Stylesheet**: All styles must reside in `css/style.css`.
 - **Responsive & Accessible**: Responsive layout with native CSS grid/flexbox. Fully supports Light Warm Paper theme and automatic Dark Mode via `@media (prefers-color-scheme: dark)`.
 
+## CSS Layout System (Two-Tier Max-Width)
+- **`body` max-width**: `60em` (`--max-width: 60em`) — gives the page container ample room for figures, tables, and wide blocks.
+- **Text element max-width**: `80ch` (`--text-max-width: 80ch`) — applied individually to `p`, `h1`–`h4`, `ol`, `ul`, `blockquote`, `.book-title`, `.book-subtitle`, and `figcaption`. The `ch` unit is relative to each element's own font-size, so the readable line length scales correctly with headings.
+- **Images & Tables**: `<figure>`, `.wide-figure`, and `.table-wrapper` elements are NOT constrained by `--text-max-width`; they expand to fill the full `60em` body width naturally.
+- **No Lightbox / Zoom**: Image zoom (lightbox) functionality has been removed. Do NOT re-add `zoom-trigger`, `lightbox-checkbox`, `lightbox-modal`, or related markup or CSS classes. Images are displayed at full width inline and are sufficiently readable at the new body width.
+
 ## Language & Content Guidelines
 - **Primary Language**: Bulgarian (Български език).
 - **English Terms**: English terms are ONLY permitted for specific hop/malt/yeast strain names or technical terms, and MUST always be provided in parentheses as clarifications to the Bulgarian text, e.g., *кисел малц (Acidulated Malt)*, *Saccharomyces pastorianus*.
