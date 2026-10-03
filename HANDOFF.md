@@ -24,7 +24,8 @@ e:/Server/homebrew-ebook/
 │   └── style.css                 # Master stylesheet (Light & Dark theme)
 ├── images/
 │   ├── chronology-diagram.png    # Bulgarian timeline illustration (Chapter 1)
-│   └── water-profiles-diagram.jpg# SO₄²⁻ : Cl⁻ ratio diagram (Chapter 2.1)
+│   ├── water-profiles-diagram.jpg# SO₄²⁻ : Cl⁻ ratio diagram (Chapter 2.1)
+│   └── malting-process-diagram.jpg # Malting process diagram (Chapter 2.2)
 ├── HANDOFF.md                    # Current state & memory for AI agents (This file)
 └── README.md                     # Quick project overview
 ```
@@ -67,7 +68,7 @@ The layout uses two separate CSS custom properties to decouple container width f
   - 1.4 Любопитни факти (`#facts`)
 - **Chapter 2** (`chapter-02-1-water.html`, `chapter-02-2-malt.html`, `chapter-02-3-hops.html`):
   - 2.1 Водата – Първата съставка и профилирането (Минерали, български води, бутилирани води, pH) + Diagram (`images/water-profiles-diagram.jpg`)
-  - 2.2 Малцът – Душата на бирата, видове и контрол на плътността (Смилане, базови/карамелени/тъмни малцове, OG & ABV за 10L)
+  - 2.2 Малцът – Душата на бирата, видове и контрол на плътността (Смилане, базови/карамелени/тъмни малцове, OG & ABV за 10L) + Diagram (`images/malting-process-diagram.jpg`)
   - 2.3 Хмелът – Подправката, душеприказчикът и консервантът (Изомеризация, варене, Dry Hopping, IBU дозировки)
 
 ### ⏳ Upcoming Chapters (To be created in next sessions)

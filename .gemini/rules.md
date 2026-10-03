@@ -22,8 +22,15 @@
 - **Primary Language**: Bulgarian (Български език).
 - **English Terms**: English terms are ONLY permitted for specific hop/malt/yeast strain names or technical terms, and MUST always be provided in parentheses as clarifications to the Bulgarian text, e.g., *кисел малц (Acidulated Malt)*, *Saccharomyces pastorianus*.
 - **Visuals & Diagram Quality**:
-  - All generated or rendered images MUST feature Bulgarian Cyrillic text.
-  - Image typography must be clean and free of typos, duplicate text labels, or misplaced apostrophes.
+  - **Задължително генериране с Nano Banana**: За всяка графика, схема или илюстрация, налична в оригиналните PDF файлове (`docs/book-source.pdf` и `docs/book-source-2.pdf`), задължително се генерира нова графика с Nano Banana (`generate_image`).
+  - **Стил на илюстрациите**: Графиките задължително следват установения визуален стил на книгата:
+    - Винтидж гравюра / гравюра на мед / линогравюра с фини щрихи и висок контраст (тъмно мастило върху фон топъл пергамент/хартия `#faf7f2`).
+    - Двойна декоративна рамка с флорални/хмелови/ечемични орнаменти в ъглите.
+    - Стандартно съотношение 16:9, вградено чрез `<figure class="wide-figure">`.
+  - **Език и типография**:
+    - Всички надписи задължително са на чист български език (кирилица).
+    - Типографията трябва да е безупречна, без печатни грешки, без дублиращи се думи и с елегантен серифен шрифт за заглавията.
+    - Английски/латински термини се допускат само в скоби като пояснение (напр. *(Germination)*, *(Kilning)*).
 
 ## File Structure & Granularity Rules
 - **Word Target per HTML File**: 500 – 1000 readable words per `.html` file.
