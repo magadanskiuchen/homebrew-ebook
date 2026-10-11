@@ -28,7 +28,8 @@ e:/Server/homebrew-ebook/
 │   ├── malting-process-diagram.jpg # Malting process diagram (Chapter 2.2)
 │   ├── malt-crushing-diagram.jpg # Malt crushing comparison diagram (Chapter 2.2)
 │   ├── starch-transformation-diagram.jpg # Starch conversion & mashing diagram (Chapter 2.2)
-│   └── hop-cones-lupulin-diagram.jpg # Hop cones & lupulin glands diagram (Chapter 2.3)
+│   ├── hop-cones-lupulin-diagram.jpg # Hop cones & lupulin glands diagram (Chapter 2.3)
+│   └── hop-timing-boil-diagram.jpg   # Hop boil timing window diagram (Chapter 2.3)
 ├── HANDOFF.md                    # Current state & memory for AI agents (This file)
 └── README.md                     # Quick project overview
 ```
@@ -45,6 +46,9 @@ e:/Server/homebrew-ebook/
 4. **Themes**: Warm paper light theme (`#faf7f2`) + automatic System Dark Mode (`prefers-color-scheme: dark`).
 5. **Granularity**: 500 – 1000 words per `.html` file.
 6. **Nav & Anchors**: Every chapter page has top/bottom nav buttons and section `#id` anchors.
+7. **Environment & PDF Tooling**: No Python installed; always use Node.js (v25.x with `fs`, `zlib`) for any PDF parsing or stream extraction.
+8. **Token-Saving & User Lookups**: Ask the user for quick lookups (e.g. PDF page number, pasting snippet/image) if scanning would take >2000 tokens.
+9. **Nano Banana Image Generation**: Always 16:9, reference previous images for copperplate engraving on `#faf7f2`, double botanical corners, bold Cyrillic titles, pure Bulgarian ("и" instead of "&").
 
 ### CSS Layout System (Two-Tier Max-Width)
 
@@ -72,7 +76,7 @@ The layout uses two separate CSS custom properties to decouple container width f
 - **Chapter 2** (`chapter-02-1-water.html`, `chapter-02-2-malt.html`, `chapter-02-3-hops.html`):
   - 2.1 Водата – Първата съставка и профилирането (Минерали, български води, бутилирани води, pH) + Diagram (`images/water-profiles-diagram.jpg`)
   - 2.2 Малцът – Душата на бирата, видове и контрол на плътността (Смилане, базови/карамелени/тъмни малцове, OG & ABV за 10L) + 3 Diagrams (`malting-process-diagram.jpg`, `malt-crushing-diagram.jpg`, `starch-transformation-diagram.jpg`)
-  - 2.3 Хмелът – Подправката, душеприказчикът и консервантът (Изомеризация, варене, Dry Hopping, IBU дозировки) + Diagram (`images/hop-cones-lupulin-diagram.jpg`)
+  - 2.3 Хмелът – Подправката, душеприказчикът и консервантът (Изомеризация, варене, Dry Hopping, IBU дозировки) + 2 Diagrams (`hop-cones-lupulin-diagram.jpg`, `hop-timing-boil-diagram.jpg`)
 
 ### ⏳ Upcoming Chapters (To be created in next sessions)
 
