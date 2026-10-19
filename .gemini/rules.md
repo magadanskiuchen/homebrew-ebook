@@ -21,6 +21,9 @@
 ## Language & Content Guidelines
 - **Primary Language**: Bulgarian (Български език).
 - **English Terms**: English terms are ONLY permitted for specific hop/malt/yeast strain names or technical terms, and MUST always be provided in parentheses as clarifications to the Bulgarian text, e.g., *кисел малц (Acidulated Malt)*, *Saccharomyces pastorianus*.
+- **Преработка на текст от PDF (Anti-Cliché & Content Rewriting Rule)**:
+  - **Без директни клишета и крилати фрази**: При прехвърляне на текст от изходните PDF документи към HTML, текстът НИКОГА не се копира дословно, ако съдържа изтъркани цитати, клишета или лозунги от популярни книги/сайтове (като *How to Brew*, *biravkyshti.com*, Чарли Папазян и др. – напр. *„90% от правенето на бира е миене...“*, *„Don't fear the foam!“*, *„водата е тялото, малцът е душата“*).
+  - **Задължително преразказване (Content Rotation)**: Всяка подобна концепция се преразказва с автентични авторски думи. Запазва се точният технически смисъл, научната достоверност, дозировките и пропорциите, но текстът се „ротира“ в чист, богат и оригинален български стил. Директни цитати се избягват напълно.
 - **Visuals & Diagram Quality**:
   - **Задължително генериране с Nano Banana**: За всяка графика, схема или илюстрация, налична в оригиналните PDF файлове (`docs/book-source.pdf` и `docs/book-source-2.pdf`), задължително се генерира нова графика с Nano Banana (`generate_image`).
   - **Стил на илюстрациите**: Графиките задължително следват установения визуален стил на книгата:

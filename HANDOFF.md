@@ -54,6 +54,7 @@ e:/Server/homebrew-ebook/
 7. **Environment & PDF Tooling**: No Python installed; always use Node.js (v25.x with `fs`, `zlib`) for any PDF parsing or stream extraction.
 8. **Token-Saving & User Lookups**: Ask the user for quick lookups (e.g. PDF page number, pasting snippet/image) if scanning would take >2000 tokens.
 9. **Nano Banana Image Generation**: Always 16:9, reference previous images for copperplate engraving on `#faf7f2`, double botanical corners, bold Cyrillic titles, pure Bulgarian ("и" instead of "&").
+10. **Anti-Cliché & Text Rewriting Rule**: No direct clichés, slogans, or tropes from popular brewing books/sites (e.g. *How to Brew*, *biravkyshti.com*). All text is rotated and retold in an authentic, original authorial voice while strictly maintaining technical precision, formulas, and terminology.
 
 ### CSS Layout System (Two-Tier Max-Width)
 
@@ -84,12 +85,12 @@ The layout uses two separate CSS custom properties to decouple container width f
   - 2.3 Хмелът – Подправката, душеприказчикът и консервантът (Изомеризация, варене, Dry Hopping, IBU дозировки) + 2 Diagrams (`hop-cones-lupulin-diagram.jpg`, `hop-timing-boil-diagram.jpg`)
 
 - **Chapter 3** (`chapter-03.html`):
-  - 3.1 Златната разлика: Почистване срещу Дезинфекция (`#cleaning-vs-sanitizing`)
-  - 3.2 Границата на варенето: Кога всичко става критично? (`#boil-boundary-zones`) + Vintage Diagram (`images/brewing-process-zones-diagram.jpg`)
-  - 3.3 Златният навик: Дезинфекцирайте ПРЕДИ да започнете варенето! (`#golden-habit`)
-  - 3.4 Най-популярните препарати в домашното пивоварство (`#popular-sanitizers`) – Star San, ChemiPro Oxi, 70% спирт, Iodophor
-  - 3.5 Откъде се купуват и как да ги ползваме практически? (`#practical-tips`)
-  - 3.6 Чек-лист: Какво ТРЯБВА да се дезинфекцира? (`#sanitization-checklist`)
+  - 3.1 Двете стъпки на хигиената: механично почистване и дезинфекция (`#cleaning-vs-sanitizing`)
+  - 3.2 Температурната граница: кога процесът става уязвим? (`#boil-boundary-zones`) + Vintage Diagram (`images/brewing-process-zones-diagram.jpg`)
+  - 3.3 Организация на работния процес: подготовка преди охлаждането (`#golden-habit`)
+  - 3.4 Преглед на приложимите дезинфектанти в пивоварството (`#popular-sanitizers`) – Star San, ChemiPro Oxi, 70% спирт, Iodophor
+  - 3.5 Практически съвети за домашното работно място (`#practical-tips`)
+  - 3.6 Контролен списък преди ферментация и бутилиране (`#sanitization-checklist`)
 
 ### ⏳ Upcoming Chapters (To be created in next sessions)
 
