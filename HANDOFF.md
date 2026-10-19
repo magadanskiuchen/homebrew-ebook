@@ -5,7 +5,7 @@
 > - `docs/book-source.pdf` (Част 1: Страници 1–25)
 > - `docs/book-source-2.pdf` (Част 2: Страници 26–51)
 > **Format**: Clean Multi-page HTML/CSS Ebook (Zero JS)  
-> **Status**: Chapters 1, 2 & 3 Complete & Verified
+> **Status**: Chapters 1, 2, 3 & 4 Complete & Verified
 
 ---
 
@@ -24,6 +24,7 @@ e:/Server/homebrew-ebook/
 ├── chapter-02-2-malt.html        # Chapter 2.2: Malt (~900 words)
 ├── chapter-02-3-hops.html        # Chapter 2.3: Hops (~800 words)
 ├── chapter-03.html               # Chapter 3: Cleaning & Sanitizing (~900 words)
+├── chapter-04.html               # Chapter 4: Cooling, Aeration & Pitching (~1000 words)
 ├── css/
 │   └── style.css                 # Master stylesheet (Light & Dark theme)
 ├── images/
@@ -34,7 +35,9 @@ e:/Server/homebrew-ebook/
 │   ├── starch-transformation-diagram.jpg # Starch conversion & mashing diagram (Chapter 2.2)
 │   ├── hop-cones-lupulin-diagram.jpg # Hop cones & lupulin glands diagram (Chapter 2.3)
 │   ├── hop-timing-boil-diagram.jpg   # Hop boil timing window diagram (Chapter 2.3)
-│   └── brewing-process-zones-diagram.jpg # Brewing zones: Hot vs Cold (Chapter 3)
+│   ├── brewing-process-zones-diagram.jpg # Brewing zones: Hot vs Cold (Chapter 3)
+│   ├── wort-cooling-methods-diagram.jpg  # Wort cooling methods diagram (Chapter 4)
+│   └── oxygen-fermentation-diagram.jpg   # Role of dissolved oxygen in fermentation (Chapter 4)
 ├── HANDOFF.md                    # Current state & memory for AI agents (This file)
 └── README.md                     # Quick project overview
 ```
@@ -92,11 +95,15 @@ The layout uses two separate CSS custom properties to decouple container width f
   - 3.5 Практически съвети за домашното работно място (`#practical-tips`)
   - 3.6 Контролен списък преди ферментация и бутилиране (`#sanitization-checklist`)
 
-### ⏳ Upcoming Chapters (To be created in next sessions)
+- **Chapter 4** (`chapter-04.html`):
+  - 4.1 Температурната опасност и образуването на дефекти (`#danger-zone`)
+  - 4.2 Технологични методи за ускорено охлаждане (`#cooling-methods`) + Vintage Diagram (`images/wort-cooling-methods-diagram.jpg`)
+  - 4.3 Вихрово въртене (Whirlpool) и утаяване на белтъчния налеп (`#whirlpool-trub`)
+  - 4.4 Преточване към ферментационния съд (`#transfer-fermenter`)
+  - 4.5 Аерация и оксигенация: жизненият кислороден импулс (`#aeration-oxygen`) + Vintage Diagram (`images/oxygen-fermentation-diagram.jpg`)
+  - 4.6 Засяване на пивоварните дрожди (Pitching) (`#yeast-pitching`)
 
-#### Chapter 4: Преходът към ферментатора: Охлаждане, аерация и засяване
-- *Source*: `docs/book-source.pdf` (Pages 21–25).
-- *Planned File*: `chapter-04.html` (~800 words) - Cooling methods, Whirlpool, aeration, yeast pitching & rehydration.
+### ⏳ Upcoming Chapters (To be created in next sessions)
 
 #### Chapter 5+: Магията на дрождите & Следващи Глави
 - *Source*: `docs/book-source.pdf` (Page 25+) & `docs/book-source-2.pdf` (Pages 26–51).
