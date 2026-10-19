@@ -5,7 +5,7 @@
 > - `docs/book-source.pdf` (Част 1: Страници 1–25)
 > - `docs/book-source-2.pdf` (Част 2: Страници 26–51)
 > **Format**: Clean Multi-page HTML/CSS Ebook (Zero JS)  
-> **Status**: Chapters 1 & 2 Complete & Verified
+> **Status**: Chapters 1, 2 & 3 Complete & Verified
 
 ---
 
@@ -20,6 +20,10 @@ e:/Server/homebrew-ebook/
 │   └── book-source-2.pdf         # Original PDF Part 2 (Pages 26–51, Chapters 5–10+)
 ├── index.html                    # Main landing page & Table of Contents
 ├── chapter-01.html               # Chapter 1 (Complete, ~800 words)
+├── chapter-02-1-water.html       # Chapter 2.1: Water (~950 words)
+├── chapter-02-2-malt.html        # Chapter 2.2: Malt (~900 words)
+├── chapter-02-3-hops.html        # Chapter 2.3: Hops (~800 words)
+├── chapter-03.html               # Chapter 3: Cleaning & Sanitizing (~900 words)
 ├── css/
 │   └── style.css                 # Master stylesheet (Light & Dark theme)
 ├── images/
@@ -29,7 +33,8 @@ e:/Server/homebrew-ebook/
 │   ├── malt-crushing-diagram.jpg # Malt crushing comparison diagram (Chapter 2.2)
 │   ├── starch-transformation-diagram.jpg # Starch conversion & mashing diagram (Chapter 2.2)
 │   ├── hop-cones-lupulin-diagram.jpg # Hop cones & lupulin glands diagram (Chapter 2.3)
-│   └── hop-timing-boil-diagram.jpg   # Hop boil timing window diagram (Chapter 2.3)
+│   ├── hop-timing-boil-diagram.jpg   # Hop boil timing window diagram (Chapter 2.3)
+│   └── brewing-process-zones-diagram.jpg # Brewing zones: Hot vs Cold (Chapter 3)
 ├── HANDOFF.md                    # Current state & memory for AI agents (This file)
 └── README.md                     # Quick project overview
 ```
@@ -78,11 +83,15 @@ The layout uses two separate CSS custom properties to decouple container width f
   - 2.2 Малцът – Душата на бирата, видове и контрол на плътността (Смилане, базови/карамелени/тъмни малцове, OG & ABV за 10L) + 3 Diagrams (`malting-process-diagram.jpg`, `malt-crushing-diagram.jpg`, `starch-transformation-diagram.jpg`)
   - 2.3 Хмелът – Подправката, душеприказчикът и консервантът (Изомеризация, варене, Dry Hopping, IBU дозировки) + 2 Diagrams (`hop-cones-lupulin-diagram.jpg`, `hop-timing-boil-diagram.jpg`)
 
-### ⏳ Upcoming Chapters (To be created in next sessions)
+- **Chapter 3** (`chapter-03.html`):
+  - 3.1 Златната разлика: Почистване срещу Дезинфекция (`#cleaning-vs-sanitizing`)
+  - 3.2 Границата на варенето: Кога всичко става критично? (`#boil-boundary-zones`) + Vintage Diagram (`images/brewing-process-zones-diagram.jpg`)
+  - 3.3 Златният навик: Дезинфекцирайте ПРЕДИ да започнете варенето! (`#golden-habit`)
+  - 3.4 Най-популярните препарати в домашното пивоварство (`#popular-sanitizers`) – Star San, ChemiPro Oxi, 70% спирт, Iodophor
+  - 3.5 Откъде се купуват и как да ги ползваме практически? (`#practical-tips`)
+  - 3.6 Чек-лист: Какво ТРЯБВА да се дезинфекцира? (`#sanitization-checklist`)
 
-#### Chapter 3: Чистотата е здраве (и бира): Почистване и дезинфекция
-- *Source*: `docs/book-source.pdf` (Pages 18–21).
-- *Planned File*: `chapter-03.html` (~850 words) - Cleaning vs. Sanitizing, Star San, Oxi, Alcohol, Sanitization checklist.
+### ⏳ Upcoming Chapters (To be created in next sessions)
 
 #### Chapter 4: Преходът към ферментатора: Охлаждане, аерация и засяване
 - *Source*: `docs/book-source.pdf` (Pages 21–25).
