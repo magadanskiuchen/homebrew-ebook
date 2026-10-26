@@ -5,7 +5,7 @@
 > - `docs/book-source.pdf` (Част 1: Страници 1–25)
 > - `docs/book-source-2.pdf` (Част 2: Страници 26–51)
 > **Format**: Clean Multi-page HTML/CSS Ebook (Zero JS)  
-> **Status**: Chapters 1, 2, 3 & 4 Complete & Verified
+> **Status**: Chapters 1, 2, 3, 4 & 5 Complete & Verified
 
 ---
 
@@ -25,6 +25,7 @@ e:/Server/homebrew-ebook/
 ├── chapter-02-3-hops.html        # Chapter 2.3: Hops (~800 words)
 ├── chapter-03.html               # Chapter 3: Cleaning & Sanitizing (~900 words)
 ├── chapter-04.html               # Chapter 4: Cooling, Aeration & Pitching (~1000 words)
+├── chapter-05.html               # Chapter 5: Yeast Microbiology & Temperature Control (~1400 words)
 ├── css/
 │   └── style.css                 # Master stylesheet (Light & Dark theme)
 ├── images/
@@ -37,7 +38,11 @@ e:/Server/homebrew-ebook/
 │   ├── hop-timing-boil-diagram.jpg   # Hop boil timing window diagram (Chapter 2.3)
 │   ├── brewing-process-zones-diagram.jpg # Brewing zones: Hot vs Cold (Chapter 3)
 │   ├── wort-cooling-methods-diagram.jpg  # Wort cooling methods diagram (Chapter 4)
-│   └── oxygen-fermentation-diagram.jpg   # Role of dissolved oxygen in fermentation (Chapter 4)
+│   ├── oxygen-fermentation-diagram.jpg   # Role of dissolved oxygen in fermentation (Chapter 4)
+│   ├── fermentation-products-diagram.jpg # Alcoholic fermentation products diagram (Chapter 5)
+│   ├── yeast-types-ale-lager-diagram.jpg # Ale vs Lager comparative diagram (Chapter 5)
+│   ├── hybrid-brewing-techniques-diagram.jpg # Cross-fermentation & hybrid techniques diagram (Chapter 5)
+│   └── bulgarian-brewing-calendar-diagram.jpg # Seasonal brewing calendar for Bulgaria (Chapter 5)
 ├── HANDOFF.md                    # Current state & memory for AI agents (This file)
 └── README.md                     # Quick project overview
 ```
@@ -103,11 +108,18 @@ The layout uses two separate CSS custom properties to decouple container width f
   - 4.5 Аерация и оксигенация: жизненият кислороден импулс (`#aeration-oxygen`) + Vintage Diagram (`images/oxygen-fermentation-diagram.jpg`)
   - 4.6 Засяване на пивоварните дрожди (Pitching) (`#yeast-pitching`)
 
+- **Chapter 5** (`chapter-05.html`):
+  - 5.1 Как дрождите оформят вкуса и стила на бирата? (`#flavor-profile`) + Vintage Diagram (`images/fermentation-products-diagram.jpg`)
+  - 5.2 Двата основни класа: Ейлови срещу Лагерни дрожди (`#ale-vs-lager`) + Vintage Diagram (`images/yeast-types-ale-lager-diagram.jpg`)
+  - 5.3 Гранични работни температури на популярни щамове (`#temperature-ranges`) – Пълна таблица с щамове (US-05, S-04, WB-06, W-34/70, S-23, Voss Kveik, NovaLager, M54) и преглед на дефектите при отклонения
+  - 5.4 Стилови маневри и крос-ферментация: Как да прекрачим правилата? (`#hybrid-techniques`) + Vintage Diagram (`images/hybrid-brewing-techniques-diagram.jpg`)
+  - 5.5 Специфика на климата в България: Кои дрожди се развиват добре и кои да избягваме? (`#bulgarian-climate`) + Vintage Diagram (`images/bulgarian-brewing-calendar-diagram.jpg`)
+
 ### ⏳ Upcoming Chapters (To be created in next sessions)
 
-#### Chapter 5+: Магията на дрождите & Следващи Глави
-- *Source*: `docs/book-source.pdf` (Page 25+) & `docs/book-source-2.pdf` (Pages 26–51).
-- *Planned Files*: `chapter-05.html` and onward as outlined in `book-source-2.pdf`.
+#### Chapter 6+: Бутилиране, съхранение и следващи глави
+- *Source*: `docs/book-source-2.pdf` (Page 6+ to end).
+- *Planned Files*: `chapter-06.html` and onward.
 
 ---
 
