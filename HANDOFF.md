@@ -5,7 +5,7 @@
 > - `docs/book-source.pdf` (Част 1: Страници 1–25)
 > - `docs/book-source-2.pdf` (Част 2: Страници 26–51)
 > **Format**: Clean Multi-page HTML/CSS Ebook (Zero JS)  
-> **Status**: Chapters 1, 2, 3, 4 & 5 Complete & Verified
+> **Status**: Chapters 1, 2, 3, 4, 5 & 6 Complete & Verified
 
 ---
 
@@ -26,6 +26,7 @@ e:/Server/homebrew-ebook/
 ├── chapter-03.html               # Chapter 3: Cleaning & Sanitizing (~900 words)
 ├── chapter-04.html               # Chapter 4: Cooling, Aeration & Pitching (~1000 words)
 ├── chapter-05.html               # Chapter 5: Yeast Microbiology & Temperature Control (~1400 words)
+├── chapter-06.html               # Chapter 6: Bottling, Carbonation & Storage (~1500 words)
 ├── css/
 │   └── style.css                 # Master stylesheet (Light & Dark theme)
 ├── images/
@@ -42,7 +43,12 @@ e:/Server/homebrew-ebook/
 │   ├── fermentation-products-diagram.jpg # Alcoholic fermentation products diagram (Chapter 5)
 │   ├── yeast-types-ale-lager-diagram.jpg # Ale vs Lager comparative diagram (Chapter 5)
 │   ├── hybrid-brewing-techniques-diagram.jpg # Cross-fermentation & hybrid techniques diagram (Chapter 5)
-│   └── bulgarian-brewing-calendar-diagram.jpg # Seasonal brewing calendar for Bulgaria (Chapter 5)
+│   ├── bulgarian-brewing-calendar-diagram.jpg # Seasonal brewing calendar for Bulgaria (Chapter 5)
+│   ├── wort-evolution-fermenter-diagram.jpg # Fermenter wort evolution 3-phase timeline (Chapter 6)
+│   ├── bottle-carbonation-diagram.jpg    # Bottle carbonation & priming mechanics diagram (Chapter 6)
+│   ├── priming-sugar-dosage-diagram.jpg  # Priming sugar dosing for 10L across styles (Chapter 6)
+│   ├── warm-conditioning-diagram.jpg     # Warm conditioning process diagram (Chapter 6)
+│   └── beer-storage-rules-diagram.jpg    # 3 golden rules for long-term beer storage (Chapter 6)
 ├── HANDOFF.md                    # Current state & memory for AI agents (This file)
 └── README.md                     # Quick project overview
 ```
@@ -115,11 +121,19 @@ The layout uses two separate CSS custom properties to decouple container width f
   - 5.4 Стилови маневри и крос-ферментация: Как да прекрачим правилата? (`#hybrid-techniques`) + Vintage Diagram (`images/hybrid-brewing-techniques-diagram.jpg`)
   - 5.5 Специфика на климата в България: Кои дрожди се развиват добре и кои да избягваме? (`#bulgarian-climate`) + Vintage Diagram (`images/bulgarian-brewing-calendar-diagram.jpg`)
 
+- **Chapter 6** (`chapter-06.html`):
+  - 6.1 Затишието след ферментацията: Кога и как разбираме, че е време за бутилиране? (`#fermentation-end`) + Vintage Diagram (`images/wort-evolution-fermenter-diagram.jpg`)
+  - 6.2 Подготовка и дезинфекция на съдовете (`#sanitizing-equipment`) – Механично измиване, химическа дезинфекция и обработка на аксесоари
+  - 6.3 Сравнителна таблица на бутилките (`#bottle-types`) – Стъклени с коронна капачка, механични тапи и PET бутилки; защита от UV светлина
+  - 6.4 Процес на бутилиране и газиране (Priming) (`#priming-process`) + 2 Vintage Diagrams (`images/bottle-carbonation-diagram.jpg`, `images/priming-sugar-dosage-diagram.jpg`) – Избор на захар, дозировка за 10L, приготвяне на захарен сироп и ABV формула
+  - 6.5 Стъпка по стъпка: Пълнене, запечатване и топла запечатка (`#step-by-step-bottling`) + Vintage Diagram (`images/warm-conditioning-diagram.jpg`) – Работа с пълнач с клапан, 3–4 см headspace и 14 дни топла запечатка при 18°C–20°C
+  - 6.6 Условия за съхранение, Cold Crash и трайност (`#storage-aging`) + Vintage Diagram (`images/beer-storage-rules-diagram.jpg`) – Студен шок, три златни правила за съхранение и таблица за консумация по стилове
+
 ### ⏳ Upcoming Chapters (To be created in next sessions)
 
-#### Chapter 6+: Бутилиране, съхранение и следващи глави
-- *Source*: `docs/book-source-2.pdf` (Page 6+ to end).
-- *Planned Files*: `chapter-06.html` and onward.
+#### Chapter 7+: Изкуството на сервирането: Температура, чаши и ритуали
+- *Source*: `docs/book-source-2.pdf` (Page 13+).
+- *Planned Files*: `chapter-07.html` and onward.
 
 ---
 
